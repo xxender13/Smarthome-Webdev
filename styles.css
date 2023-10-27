@@ -1,0 +1,299 @@
+/* Add CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex; 
+    height: 100%;
+  flex-direction: row; 
+  }
+  
+  .sidenav {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 15px;
+  }
+  
+  .content {
+    flex: 1;  
+    padding: 20px;
+  }
+  
+  .right-sidebar {
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    background-color: lightgray;
+    border-radius: 10px;  
+  }
+  
+  /* Sidebar */
+  .user {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .menu, 
+  .settings {
+    margin-bottom: 20px; 
+  }
+  
+  .heading {
+    font-weight: bold;
+  }
+  
+  .item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .item:hover {
+    background-color: rgb(6, 156, 231);   
+  }
+  
+  /* Header */
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Search */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-symbol {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  /* Rooms */
+  .rooms {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .room-tile {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;  
+  }
+  
+  .room-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Levels */
+  .levels-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+  
+  .levels {
+    display: inline-block;
+  }
+  
+  .levels-tile {
+    width: 300px;
+    height: 150px; 
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .levels-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Misc */ 
+  .section-heading {
+    font-weight: bold;
+    margin-bottom: 10px; 
+  }
+  
+  .member-tile {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .member-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  /* device */
+  .devices {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .device-tile {
+    width: 150px; 
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-block; /* Display tiles in one horizontal line */
+    vertical-align: top;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .device-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .device-heading {
+    font-weight: bold;
+  }
+  
+  device-subheading {
+    color: gray;
+  }
+  
+  /* Toggle button styles */
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "Off";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:checked + .slider:before {
+    content: "On";
+  }
+  
+  /* History */
+  .device-history .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+ 
+  /* Your existing CSS styles */
+.device-history .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .device-history .green-dot {
+    background-color: green;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidenav,
+    .right-sidebar {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+
+    .container {
+       flex-direction: column;
+    }
+  
+    .sidenav,
+    .right-sidebar {
+       height: auto;
+    }
+  
+  }

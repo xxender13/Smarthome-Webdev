@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="sidenav">
+      <div class="user">
+        Harshil Sharma  
+      </div>
+
+      <div class="menu">
+        <div class="heading">Menu</div>
+        <div class="item">Insights</div>
+        <div class="item">Recommendations</div>
+        <div class="item">Messages</div>
+      </div>
+
+      <div class="settings">
+        <div class="heading">Settings</div>
+        <div class="item">Profile</div>
+        <div class="item">FAQ's</div>
+        <div class="item">Contact Us</div>
+        <div class="item">Logout</div>
+      </div>
+    </div>
+
+    <div class="content">
+    
+      <div class="header">
+        <h1>Rooms</h1>
+      </div>
+      
+      <div class="rooms">
+      
+        <div class="room-tile">
+          <div class="room-heading">Bedroom</div>
+          <div class="room-subheading">8 devices</div>
+        </div>
+        
+        <div class="room-tile">
+          <div class="room-heading">Kitchen</div>
+          <div class="room-subheading">10 devices</div> 
+        </div>
+        
+        <div class="room-tile">
+          <div class="room-heading">Kitchen</div>
+          <div class="room-subheading">10 devices</div>
+        </div>
+        
+        <div class="room-tile">
+          <div class="room-heading">Kitchen</div>
+          <div class="room-subheading">10 devices</div>
+        </div>
+        
+        <div class="room-tile">
+          <div class="room-heading">Kitchen</div>
+          <div class="room-subheading">10 devices</div>
+        </div>
+        
+      </div>
+
+      <div class="header">
+        <h1>Levels</h1>
+        <button id="scrollMembersButton">Scroll Right</button>
+      </div>
+
+      <div class="levels-container">
+      
+        <div class="levels">
+        
+          <div class="levels-tile">
+            <div class="levels-heading">Humidity</div>
+            <div class="levels-subheading">Today</div>
+            <img src="humidity.jpg" alt="humiditygraph">
+          </div>
+          
+          <div class="levels-tile">
+            <div class="levels-heading">Energy</div>
+            <div class="levels-subheading">Today</div>
+            <img src="energy.jpg" alt="energy">
+          </div>
+          
+          
+          
+        </div>
+        
+      </div>
+      <div class="header">
+        <h1>Devices</h1>
+      </div>
+      
+      <div class="device">
+      
+        <div class="device-tile">
+            <div class="device-heading">Air Conditioner</div>
+            <label class="toggle">
+              <input type="checkbox" id="airConditionerToggle"> <!-- Unique id for this checkbox -->
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          
+        
+        <div class="device-tile">
+          <div class="device-heading">Smart Tv</div>
+          <label class="toggle">
+            <input type="checkbox" id="deviceToggle">
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        
+        <div class="device-tile">
+          <div class="device-heading">Coffee Machine</div>
+          <label class="toggle">
+            <input type="checkbox" id="deviceToggle">
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        
+        <div class="device-tile">
+          <div class="device-heading">Refrigerator</div>
+          <label class="toggle">
+            <input type="checkbox" id="deviceToggle">
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        
+        <div class="device-tile">
+          <div class="device-heading">Kitchen</div>
+          <label class="toggle">
+            <input type="checkbox" id="deviceToggle">
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <div class="right-sidebar">
+    
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <div class="notification-symbol"></div>
+      </div>
+
+      <div class="members">
+        <div class="section-heading">Members</div>
+
+        <div class="member-tile">
+          <div class="member-name">John Doe</div>
+        </div>
+
+        <div class="member-tile">
+          <div class="member-name">Jane Smith</div>
+        </div>
+
+      </div>
+      <div class="history">
+        <div class="history-heading">History</div>
+        <div class="device-history" id="airConditionerH">
+          <span class="dot"></span>
+          <span class="device-name">Air Conditioner</span>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+    </div>
+   
+
+  </div>
+  
+
+
+</body>
+
+</html>
